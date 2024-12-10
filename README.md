@@ -8,7 +8,6 @@ This repository is part of the Horizon Europe Project **METAMORPHA**. It contain
 - `preprocessing.py`: Python script used to preprocess point clouds and generate the parameter sheet.
 - `./data/data.xlsx`: A structured Excel file with processed data metrics.
 - `process_point_cloud.ipynb`: A Jupyter notebook explaining step-by-step how preprocessing is applied to a single point cloud file.
-- README: You're reading it! 😎
 
 ## **About the Dataset**
 The point cloud dataset contains:
