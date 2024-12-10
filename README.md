@@ -16,8 +16,7 @@ The point cloud dataset contains:
 - **Number of Files**: 609
 - **Description**: Each file represents a surface profile, with metrics derived from roughness calculations and step height analysis.
 
-Due to the size of the dataset (~10 GB), it is not hosted directly on GitHub. You can access the point cloud files via the following link:
-👉 **[Download Point Cloud Dataset](https://example.com)**
+Due to the size of the dataset (~10 GB), it is not hosted directly on GitHub. If you would like access to the point cloud files, please contact me via email at [micasan4@teleco.upv.es].
 
 > **Note:** Replace the link with the actual download location.
 
