@@ -53,4 +53,5 @@ The preprocessing script generates an Excel file (`data.xlsx`) with the followin
 The repository also includes a Jupyter notebook (`notebook_example.ipynb`) that demonstrates, step-by-step, how preprocessing is applied to a single `.xyz` file. This is useful for understanding the methodology in detail.
 
 ## **Acknowledgments**
-This work is part of the **Horizon Europe METAMORPHA Project**, funded by the European Union.
+The METAMORPHA project has received funding from Horizon Europe, the European Union’s Framework Programme for Research and Innovation, under grant agreement 101057457.
+Views and opinions expressed are however those of the authors only and do not necessarily reflect those of the European Union. The European Union cannot be held responsible for them
