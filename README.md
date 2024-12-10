@@ -1,2 +1,66 @@
-# metamorpha-point-cloud-dataset
-This repository hosts a dataset of 609 point cloud files in .xyz format, obtained through white light interferometry (WLI). Accompanying the dataset is a .csv file that documents the laser parameters applied for each measurement. This dataset is part of the Horizon Europe Project METAMORPHA, focused on laser micromachining advancements.
+
+# **METAMORPHA Point Cloud Dataset and Preprocessing**
+
+## **Overview**
+This repository is part of the Horizon Europe Project **METAMORPHA** (Grant Agreement No. 101057457). It contains the preprocessing script used to process a dataset of 609 point clouds generated via **White Light Interferometry (WLI)**. The dataset also includes a parameter sheet (`data.xlsx`) that summarizes essential metrics derived from the point clouds for machine learning applications.
+
+## **Contents**
+- `preprocessing.py`: Python script used to preprocess point clouds and generate the parameter sheet.
+- `data.xlsx`: A structured Excel file with processed data metrics.
+- `notebook_example.ipynb`: A Jupyter notebook explaining step-by-step how preprocessing is applied to a single point cloud file.
+- README: You're reading it! 😎
+
+## **About the Dataset**
+The point cloud dataset contains:
+- **Format**: `.xyz` files
+- **Number of Files**: 609
+- **Description**: Each file represents a surface profile, with metrics derived from roughness calculations and step height analysis.
+
+Due to the size of the dataset (~10 GB), it is not hosted directly on GitHub. You can access the point cloud files via the following link:
+👉 **[Download Point Cloud Dataset](https://example.com)**
+
+> **Note:** Replace the link with the actual download location.
+
+## **Preprocessing and Metrics**
+The preprocessing script performs the following steps for each `.xyz` file:
+1. **Correction of NaN Values**: Replaces missing data.
+2. **Tilt Correction**: Aligns surfaces to eliminate measurement tilt.
+3. **Filtering (λ < 10 µm)**: Smooths the surface for micro-roughness analysis.
+4. **Metric Calculations**:
+   - **Sa**: Arithmetic mean roughness.
+   - **Sz**: Maximum peak-to-valley height.
+   - **Sa λ<10 µm**: Filtered roughness for micro-scale.
+   - **Average Step Height**: Difference between reference and processed regions.
+
+The processed metrics are saved in `data.xlsx` for easy use in machine learning pipelines or further analysis.
+
+## **Usage**
+To run the preprocessing script:
+1. Place the `.xyz` files in the `path/to/point/clouds` directory.
+2. Define the output path for `data.xlsx` in the script.
+3. Execute the script:
+   ```bash
+   python preprocessing.py
+   ```
+
+## **Generated Output**
+The preprocessing script generates an Excel file (`data.xlsx`) with the following columns:
+| **Column Name**      | **Description**                                   |
+|-----------------------|---------------------------------------------------|
+| **Name**             | Name of the `.xyz` file.                         |
+| **Sa**               | Roughness (arithmetic mean).                     |
+| **Sz**               | Peak-to-valley height.                           |
+| **Sa λ<10 µm**       | Filtered roughness for micro-scale.              |
+| **Average Step Height** | Step height between reference and processed regions. |
+
+## **Notebook Explanation**
+The repository also includes a Jupyter notebook (`notebook_example.ipynb`) that demonstrates, step-by-step, how preprocessing is applied to a single `.xyz` file. This is useful for understanding the methodology in detail.
+
+## **Contributing**
+If you have suggestions for improvement or wish to contribute additional metrics, feel free to open an issue or submit a pull request.
+
+## **License**
+This repository is shared under the **MIT License**. For more details, see the `LICENSE` file.
+
+## **Acknowledgments**
+This work is part of the **Horizon Europe METAMORPHA Project**, funded by the European Union.
