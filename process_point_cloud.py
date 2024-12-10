@@ -7,8 +7,8 @@ import pandas as pd
 from utilities.utils import arreglar_imagen, tilt_correction, filter_image
 
 
-root_path = '../NASFolder/Data/ILT_process_strategies/ILT_240208_B_New_Data/NX2-WLI'
-result_path = '../NASFolder/Data/ILT_process_strategies/ILT_240208_B_New_Data/rugosidades.csv'
+root_path = 'path/to/point/clouds'
+result_path = 'path/to/result.csv'
 point_clouds_names = ns(os.listdir(root_path))
 
 data = np.empty((len(point_clouds_names), 5), dtype=object)
