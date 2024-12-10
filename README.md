@@ -2,12 +2,12 @@
 # **METAMORPHA Point Cloud Dataset and Preprocessing**
 
 ## **Overview**
-This repository is part of the Horizon Europe Project **METAMORPHA** (Grant Agreement No. 101057457). It contains the preprocessing script used to process a dataset of 609 point clouds generated via **White Light Interferometry (WLI)**. The dataset also includes a parameter sheet (`data.xlsx`) that summarizes essential metrics derived from the point clouds for machine learning applications.
+This repository is part of the Horizon Europe Project **METAMORPHA**. It contains the preprocessing script used to process a dataset of 609 point clouds generated via **White Light Interferometry (WLI)**. The dataset also includes a parameter sheet (`data.xlsx`) that summarizes essential metrics derived from the point clouds for machine learning applications.
 
 ## **Contents**
 - `preprocessing.py`: Python script used to preprocess point clouds and generate the parameter sheet.
-- `data.xlsx`: A structured Excel file with processed data metrics.
-- `notebook_example.ipynb`: A Jupyter notebook explaining step-by-step how preprocessing is applied to a single point cloud file.
+- `./data/data.xlsx`: A structured Excel file with processed data metrics.
+- `process_point_cloud.ipynb`: A Jupyter notebook explaining step-by-step how preprocessing is applied to a single point cloud file.
 - README: You're reading it! 😎
 
 ## **About the Dataset**
@@ -55,12 +55,6 @@ The preprocessing script generates an Excel file (`data.xlsx`) with the followin
 
 ## **Notebook Explanation**
 The repository also includes a Jupyter notebook (`notebook_example.ipynb`) that demonstrates, step-by-step, how preprocessing is applied to a single `.xyz` file. This is useful for understanding the methodology in detail.
-
-## **Contributing**
-If you have suggestions for improvement or wish to contribute additional metrics, feel free to open an issue or submit a pull request.
-
-## **License**
-This repository is shared under the **MIT License**. For more details, see the `LICENSE` file.
 
 ## **Acknowledgments**
 This work is part of the **Horizon Europe METAMORPHA Project**, funded by the European Union.
