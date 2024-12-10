@@ -18,8 +18,6 @@ The point cloud dataset contains:
 
 Due to the size of the dataset (~10 GB), it is not hosted directly on GitHub. If you would like access to the point cloud files, please contact me via email at [micasan4@teleco.upv.es].
 
-> **Note:** Replace the link with the actual download location.
-
 ## **Preprocessing and Metrics**
 The preprocessing script performs the following steps for each `.xyz` file:
 1. **Correction of NaN Values**: Replaces missing data.
